@@ -13,6 +13,7 @@ import Product from './pages/Product'
 import Collection from './pages/Collection'
 
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
          <Route path="/collection" element={<Collection />} />
 
       </Routes>
+
+      <Footer/>
      </div>
   )
 }
