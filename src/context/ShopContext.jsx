@@ -10,10 +10,10 @@ export const ShopContextProvider = (props) => {
      const deliveryFee = 30;
  
       const [search, setSearch] = useState('');
-      const [showSearch, setShowSearch] = useState(true);
+      const [showSearch, setShowSearch] = useState(false);
 
     const value = {
-     products,
+      products,
       currency, 
       deliveryFee,
       search,
