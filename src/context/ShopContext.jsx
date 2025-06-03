@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { createContext } from "react";
 import { products } from "../assets/frontend_assets/assets";
-import React, { useState } from "react";
 export const ShopContext = createContext();
 
 
