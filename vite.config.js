@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Ecommerce/', // ✅ must match GitHub Pages path
+base: '/Ecommerce/',
   plugins: [react()],
 })
