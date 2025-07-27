@@ -1,15 +1,14 @@
 {
- "homepage": "https://a-m-santhoshkumar.github.io/Ecommerce",
   "name": "santhosh-templates",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://a-m-santhoshkumar.github.io/Ecommerce",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "vite build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -19,18 +18,12 @@
     "react-toastify": "^11.0.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.25.0",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.25.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
+    "vite": "^6.3.5",
     "gh-pages": "^6.3.0",
-    "globals": "^16.0.0",
-    "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
-    "vite": "^6.3.5"
+    "postcss": "^8.5.3",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.25.0"
   }
 }
